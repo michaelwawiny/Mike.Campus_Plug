@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusPlug | Your Campus. Your Market.</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">campus<span>plug.</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#marketplace">Marketplace</a>
+            <a href="#sell">Sell an Item</a>
+        </nav>
+
+        <a href="#sell" class="sell-button">+ Sell Item</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+
+            <p class="eyebrow">THE STUDENT MARKETPLACE</p>
+
+            <h1>Your campus.<br>Your <span>market.</span></h1>
+
+            <p class="hero-description">
+                Buy what you need. Sell what you don't.
+                Discover great deals within your campus community.
+            </p>
+
+            <form class="search-bar" id="search-form">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="What are you looking for?"
+                    aria-label="Search products"
+                >
+
+                <button type="submit">Search</button>
+            </form>
+
+            <p class="campus-note">
+                MADE FOR STUDENTS, BY STUDENTS.
+            </p>
+
+        </section>
+
+        <section class="marketplace" id="marketplace">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FIND YOUR NEXT DEAL</p>
+                    <h2>Explore the market.</h2>
+                </div>
+
+                <select id="category-filter" aria-label="Filter by category">
+                    <option value="all">All categories</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Books">Books</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+
+                <article class="product-card">
+                    <div class="product-image">💻</div>
+                    <div class="product-info">
+                        <p class="product-category">Electronics</p>
+                        <h3>HP Laptop</h3>
+                        <p class="product-price">KSh 25,000</p>
+                        <p class="seller">Listed by Brian</p>
+                        <button class="contact-button"
+                            data-seller="Brian"
+                            data-product="HP Laptop">
+                            Contact seller
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">📚</div>
+                    <div class="product-info">
+                        <p class="product-category">Books</p>
+                        <h3>Calculus Textbook</h3>
+                        <p class="product-price">KSh 800</p>
+                        <p class="seller">Listed by Sarah</p>
+                        <button class="contact-button"
+                            data-seller="Sarah"
+                            data-product="Calculus Textbook">
+                            Contact seller
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">🎧</div>
+                    <div class="product-info">
+                        <p class="product-category">Electronics</p>
+                        <h3>Wireless Headphones</h3>
+                        <p class="product-price">KSh 1,500</p>
+                        <p class="seller">Listed by Kevin</p>
+                        <button class="contact-button"
+                            data-seller="Kevin"
+                            data-product="Wireless Headphones">
+                            Contact seller
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="empty-message" hidden>
+                No products found. Try another search.
+            </p>
+
+        </section>
+
+        <section class="sell-section" id="sell">
+            <p class="eyebrow">GOT SOMETHING TO SELL?</p>
+            <h2>Give your items a new home.</h2>
+            <p>Turn things you no longer need into money.</p>
+            <button id="start-selling">List your item</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">campus<span>plug.</span></a>
+        <p>Your campus. Your market.</p>
+        <p>&copy; 2026 CampusPlug. Built for students.</p>
+    </footer>
+
+</body>
+</html>
